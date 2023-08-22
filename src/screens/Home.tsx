@@ -1,11 +1,25 @@
-import { View, Text } from "react-native";
-import React from "react";
+import { View, Text, ScrollView } from "react-native";
+import React, { useLayoutEffect } from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-const Home = () => {
+const Home = ({ navigation }: any) => {
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerShown: false,
+    });
+  }, []);
+
   return (
-    <View>
-      <Text className="text-red-500">Hdasome</Text>
-    </View>
+    <SafeAreaView className="flex-col">
+      <View className="flex w-full h-full">
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          className="w-full"
+        >
+          <Text>Teasdst</Text>
+        </ScrollView>
+      </View>
+    </SafeAreaView>
   );
 };
 
