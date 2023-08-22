@@ -5,7 +5,7 @@ export const UserSlice = createSlice({
   initialState: {
     value: {
       full_name: "Parth Kolgiri",
-      profile_image: "",
+      profile_image: "https://media.licdn.com/dms/image/D4D03AQHcNEFrZfQosA/profile-displayphoto-shrink_400_400/0/1680590298094?e=1698278400&v=beta&t=DCtX7n8FiPI3aw66sf1ZNs2bVN5WLKg-rhrp0qYdn1U",
       header:
         "SDE | React, React Native, Node, PostgreSQL | Transforming ideas into realities",
       city: "Pune",
